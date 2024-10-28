@@ -37,6 +37,46 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;    
     padding: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.search button i {
+    font-size: 18px;
+}
+
+.media-link {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.login-name {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;    
+}
+
+.links {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.links > div {
+    padding: 5px 20px 5px 20px;
+    margin: 15px;
+    background-color: rgb(9, 139, 187);
+    border-radius: 30px;
+
 }
 
 .main-content {
