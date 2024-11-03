@@ -8,7 +8,10 @@
     display: grid;
     grid-template-columns: minmax(250px, 15%) 1fr ;
     grid-template-rows: 1fr 5fr;
-    height: 100vh;
+    height: 80vh;
+    width: auto;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .sidebar {
@@ -87,27 +90,49 @@ input {
 }
 
 .media-link {
+    margin-left: 25%;
     grid-column: 2 / 3;
     grid-row: 1 / 2; 
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
+    display: inline-flex;
+    align-items: center;
 }
 
-.media-link > img, .section-icon > img {
-    width: 20px;    
+.media-link :nth-child(2) {
+    width: 7rem;    
+    height: auto;
+    margin-right: 50px;
+    filter: invert(89%) sepia(63%) saturate(1255%) hue-rotate(318deg) brightness(95%) contrast(100%);
+}
+
+.media-link > div:first-child {
+    width: 3rem;    
     height: auto;
     margin-right: 50px;
 }
 
-.media-link > * {
-    float: right;
+.media-link > div  {    
+    margin-right: 50px;
 }
-
-
 .login-name {
     grid-column: 1 / 2;
     grid-row: 2 / 3;    
 }
+
+.login-name :first-child > img {
+    width: 70px;    
+    height: auto;
+    float: left;   
+    filter: invert(89%) sepia(63%) saturate(1255%) hue-rotate(318deg) brightness(95%) contrast(100%);
+}
+
+
+
+.section-icon > img {
+    width: 1.3rem;    
+    height: auto;
+    margin-right: 50px;
+}
+
 
 .links {
     grid-column: 2 / 3;
@@ -150,16 +175,18 @@ input {
     padding-bottom: 10px;
 }
 
-/* .section-icon > img {
-    border-right: 10px;
-    border-bottom: 20px;
-} */
+.section-icon {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .section > div > div {
     background-color: white;
     padding: 20px;
     border-radius: 5px; 
     border-left: 8px solid rgb(244, 186, 80);
+    display: grid;
+    grid-template-rows: 90% 10%;
 }
 
 .info {
@@ -212,7 +239,38 @@ li {
     list-style: none;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-bottom: 10px;
 }
+
+.one > img {
+    width: 40px;    
+    height: auto;
+    float: left;   
+    margin-right: 10px;
+}
+
+.two > img {
+    width: 40px;    
+    height: auto;
+    float: left;   
+    filter: invert(89%) sepia(63%) saturate(1255%) hue-rotate(318deg) brightness(95%) contrast(100%);
+    margin-right: 10px;
+}
+
+.three > img {
+    width: 40px;    
+    height: auto;
+    float: left;   
+    margin-right: 10px;
+}
+
+.four > img {
+    width: 40px;    
+    height: auto;
+    float: left;   
+    margin-right: 10px;
+}
+
 
 li > h5 {    
     font-size: .7rem;
